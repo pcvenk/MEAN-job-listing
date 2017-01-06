@@ -98,5 +98,15 @@ angular.module('jobs').controller('JobsController', ['$scope', '$stateParams', '
 		$scope.filterItem = {
 			job_type: $scope.filterOptions.job_types[0]
 		};
+
+		$scope.customFilter = function(data){
+			if(data.job_type == $scope.filterItem.job_type.name){
+				return true;
+			} else if($scope.filterItem.job_type.name == 'Show all'){
+				return true;
+			} else {
+				return false;
+			}
+		}
 	}
 ]);
