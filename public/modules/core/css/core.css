@@ -17,3 +17,8 @@
 .strong{
 	font-weight: 800;
 }
+
+.panel-body {
+	background-color: rgba(248, 248, 248, 0.71);
+}
+
